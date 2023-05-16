@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    cursor: url("../images/mouse-pointer.png"), move;
+
+}
+
+a{
+    cursor: url("../images/mouse-hover.png"), default;
+  }
+
+  canvas {
+    position: absolute;
+    margin-top: 5%;
+    left: 40%;
+    top:15%;
+    z-index:3;
+  }
+
+body{
+    background-image:url('../images/background1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:15%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width:50vw;
+    height:40px;
+    padding-bottom: 40%;
+    
+    margin-left:50%;
+    transform: translate(-50%);
+    margin-top: 2%;
+    
+    border: 3px solid rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.header{
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:x-large;
+
+    position:relative;
+    background-color: rgb(185, 185, 185);
+    width:100%;
+    height:40px;
+    outline: 3px solid rgb(0, 0, 0);
+}
+
+.close{
+    position:absolute;
+    right:0;
+    top:0;
+    width:40px;
+    height:100%; 
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:red;
+    text-decoration: none;
+    font-size:30px;
+}
+
+#photo-gallery{
+    position: absolute;
+    width:80%;
+    z-index: 1;
+    display:none;
+    }
+
+#video {
+    position: relative;
+    margin-top: 5%;
+    left: 10%;
+    width: 80%;
+    z-index: 2;
+    border-radius: 5px;
+  }
+
+#video.flash{
+    animation: flash-animation 0.3s linear;
+    background-color: azure;
+    
+}
+
+#flash-button {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:2;
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    border-width:8px;
+    
+    cursor: url("../images/mouse-hover.png"), default;
+  }
+
+ @keyframes flash-animation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+.footer{
+    position:fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(146, 146, 146);
+    z-index:1;
+}
+
+.footer{
+    position:fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(146, 146, 146);
+}
+
+.home{
+    position: relative;
+    display: inline-block;
+    margin-left:25px;
+    margin-top:10px;
+}
+
+.home:hover .home-content {display: block;}
+
+.homebtn{
+    background-image: url('../images/home.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top:5px;
+    padding: 25px;
+    border: none;
+}
+
+.home-content{
+display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,2, 2);
+  z-index: 1;
+  bottom:100%;
+}
+.home-content a{
+color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.home-content a:hover {background-color: #ddd;}
+
+.folder{
+    position: fixed;
+    margin-left: 3%;
+    bottom:19px;
+    width:50px;
+}
+
+.email{
+    position:fixed;
+    margin-left:16%;
+    bottom:16px;
+    width:50px;
+}
+
+.browser{
+    position:fixed;
+    margin-left: 11%;
+    bottom: 11px;
+    background-size: 20px;
+}
+
+.time-container{
+    position:absolute;
+    display: inline-block;
+    margin-left:90%;
+    margin-top:20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right:30px;
+}
+
+#ct7{
+    right:20px;
+    width:20px;
+    transform: translate(-50%);
+    padding-top:5px;
+    font-weight: bold;
+    color:rgb(217, 217, 217);
+    font-size:20px;
+}
+
+.image-hover{
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+}
+
+.image-hover:hover{
+opacity:1;
+}
+
+.PNG{
+    position:absolute;
+    width:120px;
+    
+    margin-left: 220px;
+    margin-top:220px;
+}
+
+.music-file{
+    height:110px;
+    width:110px;
+   
+    position:absolute;
+    text-align:center;
+    padding-bottom: 15px;
+    margin-left:240px;
+    margin-top:640px;
+}
+
+.camera{
+    height:140px;
+    
+    position:absolute;
+    text-align:center;
+    padding-bottom:15px;
+    margin-left:50px;
+    margin-top:440px;
+}
+
+.read-me{
+    height:140px;
+    
+    position:absolute;
+    
+    margin-left:35px;
+    margin-top:240px;
+}
+
+.folder-desktop{
+    height:120px;
+    width:120px;
+
+    position: absolute;
+
+    margin-left: 40px;
+    margin-top: 40px;
+
+    z-index: 3;
+}
+
+.art{
+    position:absolute;
+    height:120px;
+    margin-left:240px;
+    margin-top:445px;
+}
+
+  

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CAPTCHR</title>
+  
+  <link rel="stylesheet" href="certificate-browser-4.css" />
+  
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  var droppedImage = document.getElementById(data);
+  ev.target.appendChild(droppedImage);
+  
+  // Set the z-index of the dropped image to ensure that it appears on top of other elements
+  droppedImage.style.zIndex = "999";
+  
+  // Reset the position and size of the dropped image
+  droppedImage.style.position = "relative";
+  droppedImage.style.left = "0";
+  droppedImage.style.top = "0";
+  droppedImage.style.width = "400px";
+  droppedImage.style.height = "300px";
+
+// Remove the .pdf class from the dropped image
+droppedImage.classList.remove("pdf");
+
+droppedImage.src = "../images/captchr-certificate.png";
+  // Show the loading spinner while the setTimeout function is running
+  var loader = document.createElement("div");
+  loader.id = "loader";
+  ev.target.appendChild(loader);
+
+  setTimeout(function() {
+
+    
+  
+  // Redirect to the target page
+  setTimeout(function() {
+    window.location.href = "../certificate-browser-4-accessed/certificate-browser-4.html";
+  }, 2000);
+    }
+, 2000);}
+    </script>
+
+</head>
+<body>
+
+    
+  
+    <div class = "container">
+
+        <div class="header">
+
+            <a href="../certificate-browser-searched/browser-searched.html" class ="back"></a>
+            <a href="" class ="forward"></a>
+            
+                <a href="../certificate-desktop/human-certificate-downloaded.html" class="close"></a></a>
+                <div class="search-bar">www.google.co.uk/rat-world/CAPTCHR_Is_Evil-Here's_Why!/</div>
+        </div>
+
+        <div class="captchr-message-container">
+            <div class="captchr-top-message">
+                This website requires a human certificate.
+                <br>
+                Please submit your certificate in the drop box below.
+            </div>
+
+            <div class="captchr-bottom-message">
+                If you don't have a certificate, please become verified 
+                <br>
+                by visiting the CAPTCHR website <a href="../captchr-website/captchr-website.html" class="link">here</a>
+            </div>
+
+        </div>
+
+            
+                <img src="../images/CAPTCHR LOGO.png" class="captchr-logo">
+            
+    
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   
+
+    </div>
+    
+     <!--footer-->
+
+<div class="footer">
+
+    <div class="home">
+        <div class="homebtn"></div>
+        <div class="home-content">
+          <a href="../0-intro/index.html">Log Out</a>
+        </div>
+    </div>
+
+    <div class="folder">
+        <a href="../folder/folder.html">
+            <img class ="folder" src="../images/folder.png">
+        </a>
+    </div>
+
+    <div class="email">
+        <a href="../email-open/email.html">
+            <img src="../images/email.png"
+            width="54">
+        </a>
+    </div>
+    
+    <div class="browser">
+        
+            <a href="../browser-clicked/browser-main.html">
+                <img src="../images/globe-image.png" alt="internet"
+            height="50"
+            width="50" 
+            >
+            <img class = "image-hover" src ="../images/globe-image-hover.png" alt="internet-select"
+            height="50"
+            width="50"
+            >
+            </a>
+    </div>
+
+    <div class="time-container">
+        <span id='ct7'></span>      
+    <script src="time.js"> </script>
+    </div>
+    
+    
+</div>
+    
+</div>
+
+  <!--icons-->
+
+
+<a href="../folder/folder.html"> <img class ="folder-desktop" src="../images/folder-document.png"></a>
+
+<a href="../desktop-camera/desktop-camera.html"> <img class="camera" src="../images/camera-icon.png" alt="camera"></a>
+
+<a href="../read-me/read-me.html"><img class="read-me" src="../images/readme.png" alt="read-me"> </a>
+   
+<a href="../desktop-art/desktop-art.html"><img class="art" src="../images/artist.png"></a>  
+    
+<img class="pdf" id="drag1" src="../images/captchrpdf.png" draggable="true" ondragstart="drag(event)">
+    
+
+   
+
+
+
+    
+</body>
+</html>

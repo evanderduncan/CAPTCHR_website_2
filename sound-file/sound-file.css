@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    cursor: url("../images/mouse-pointer.png"), move;
+
+}
+
+a{
+    cursor: url("../images/mouse-hover.png"), default;
+  }
+
+body{
+    background: rgb(104, 104, 104);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.audio-menu{
+    position: absolute;
+    left:40%;
+    top:20%;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #56AEFF;
+  }
+
+.music-window{
+    position: absolute;
+    height:200px;
+    width:600px;
+    background-color: white;
+    z-index: 2;
+}
+
+.music-file{
+    height:110px;
+    width:110px;
+    display: block;
+    position:absolute;
+    text-align:center;
+    padding-bottom: 15px;
+    margin-left:10%;
+    margin-top:40%;
+}
+
+.close{
+    position:absolute;
+    background-color: white;
+    top:0;
+    left:0;
+    height:20px;
+    width:20px;
+}
+
+.footer{
+    position:fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(146, 146, 146);
+}
+
+#ct7{
+    right:20px;
+    width:20px;
+    transform: translate(-50%);
+    padding-top:5px;
+    font-weight: bold;
+    color:rgb(217, 217, 217);
+    font-size:15px;
+}
+
+.home{
+    position: relative;
+    display: inline-block;
+    margin-left:25px;
+    margin-top:10px;
+}
+
+.home:hover .home-content {display: block;}
+
+.homebtn{
+    background-image: url('../images/home.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top:5px;
+    padding: 25px;
+    border: none;
+}
+
+.home-content{
+display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,2, 2);
+  z-index: 1;
+  bottom:100%;
+}
+.home-content a{
+color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.home-content a:hover {background-color: #ddd;}
+
+.folder{
+    position: fixed;
+    margin-left: 3%;
+    bottom:19px;
+    width:50px;
+}
+
+.email{
+    position:fixed;
+    margin-left:16%;
+    bottom:16px;
+    width:50px;
+}
+
+.browser{
+    position:fixed;
+    margin-left: 11%;
+    bottom: 11px;
+    background-size: 20px;
+}
+
+.time-container{
+    position:absolute;
+    display: inline-block;
+    margin-left:90%;
+    margin-top:20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right:30px;
+}
+
+.image-hover{
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+}
+
+.image-hover:hover{
+opacity:1;
+}
+
+.PNG{
+    position:absolute;
+    width:120px;
+    margin-left: 70%;
+    margin-top:10%;
+}
+
+.music-file{
+    height:110px;
+    width:110px;
+    display: block;
+    position:absolute;
+    text-align:center;
+    padding-bottom: 15px;
+    margin-left:10%;
+    margin-top:40%;
+}
+
+.camera{
+    height:140px;
+    display: block;
+    position:absolute;
+    text-align:center;
+    padding-bottom:15px;
+    margin-left:30%;
+    margin-top:30%;
+}
+
+.read-me{
+    height:140px;
+    width:140px;
+
+    position:absolute;
+    
+    margin-left:20%;
+    margin-top:30%;
+}
+
+.folder-desktop{
+    height:120px;
+    width:120px;
+
+    position: absolute;
+
+    margin-left: 40px;
+    margin-top: 40px;
+
+    z-index: 3;
+}
+
+.art{
+    position:absolute;
+    height:85px;
+    margin-left:80%;
+    margin-top:20%;
+}

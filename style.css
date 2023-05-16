@@ -1,0 +1,68 @@
+html{
+    background-image: url('/images/login-background.png');
+    background-repeat: no-repeat;
+    height:100%;
+    background-size: cover;
+
+    cursor: url("/images/mouse-pointer.png"), move;
+}
+
+a{
+    cursor: url("/images/mouse-hover.png"), default;
+  }
+
+p{
+    text-decoration:25;
+    font-size: 25px;
+}
+
+.login{
+    position: absolute;
+
+    width:200px;
+    height:75px;
+    background-color: rgb(235, 222, 204);
+    
+    margin-left:50%;
+    transform: translate(-50%);
+    margin-top:91%;
+
+    
+
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+}
+
+.login:hover{
+    background-color: rgb(221, 210, 194);
+    font-weight: bold;
+}
+
+.login-container{
+    background-color: rgb(208, 195, 179);
+    width:700px;
+    height:750px;
+    margin-left:50%;
+    margin-top:12%;
+    transform: translate(-50%);
+    
+}
+
+.profile-image{
+    position: absolute;
+    background-color: rgb(235, 222, 204);
+    width:90%;
+    margin-left:50%;
+    transform: translate(-50%);
+    margin-top: 40px;
+    height:73%;
+
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right:30px;
+
+    text-align:center;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+}
