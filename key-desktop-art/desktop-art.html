@@ -2,14 +2,20 @@
 <html>
 <head>
   <title>CAPTCHR</title>
-  <link rel="stylesheet" href="window_engine/window_engine.css">
-    <link rel="stylesheet" href="key-desktop.css" />
-  
+    <link rel="stylesheet" href="window_engine/window_engine.css">
+    <link rel="stylesheet" href="desktop-art.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
 </head>
 <body>
-  
-    <a href="../desktop/desktop.html" id="close"></a>  
-       
+  <div class ="art-canvas">
+    <script src="desktop-art.js"></script>
+    <a href="../key-desktop/key-desktop.html" id="close">X</a>  
+  </div>
+    
+    <!--footer-->
+
 <div class="footer">
 
     <div class="home">
@@ -26,9 +32,9 @@
     </div>
 
     <div class="email">
-        <a href="../email/email.html">
-            <img src="../images/email.png" 
-            width="50">
+        <a href="../email-open/email.html">
+            <img src="../images/email.png"
+            width="54">
         </a>
     </div>
     
@@ -48,17 +54,19 @@
 
     <div class="time-container">
         <span id='ct7'></span>      
-    <script src="time.js"> </script>
+    <script src="desktop.js"> </script>
     </div>
     
     
 </div>
 
+<!--icons-->
+
 <a href="../key-inside-folder/key-inside-folder.html"> <img class ="folder-desktop" src="../images/folder-document.png"></a>
 
-<a href="../desktop-camera/desktop-camera.html"> <img class="camera" src="../images/camera-icon.png" alt="camera" height="100" width="100"></a>
+<a href="../key-desktop-camera/desktop-camera.html"> <img class="camera" src="../images/camera-icon.png" alt="camera" height="100" width="100"></a>
 
-<a href="../key-read-me/read-me.html"><img class="read-me" src="../images/readme.png" alt="read-me"> </a>
+<a href="../read-me/read-me.html"><img class="read-me" src="../images/readme.png" alt="read-me"> </a>
    
 <a href="../key-desktop-art/desktop-art.html"><img class="art" src="../images/artist.png"></a>
 

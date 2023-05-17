@@ -76,7 +76,7 @@ function draw() {
       if (dist(blueCircle.x, blueCircle.y, redCircle.x, redCircle.y) < blueCircleSize/2 + 25) {
         setup();
         counter++;
-        if (counter === 5) {
+        if (counter >= 5) {
           // show the button
           let nextPageBtn = document.getElementById("next-page-btn");
           nextPageBtn.classList.remove("hidden");
@@ -86,12 +86,12 @@ function draw() {
     }
 
     // draw the blue circle
-    fill(46, 56, 149);
+    fill(30,144,255);
     stroke(255);
     strokeWeight(2);
     ellipse(blueCircle.x, blueCircle.y, blueCircleSize, blueCircleSize);
     
-    fill(149, 56, 46);
+    fill(255, 0, 0);
     stroke(255);
     strokeWeight(2);
     ellipse(redCircle.x, redCircle.y, 50, 50);
