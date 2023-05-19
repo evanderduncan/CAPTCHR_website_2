@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    cursor: url("../images/mouse-pointer.png"), move;
+
+}
+
+a{
+    cursor: url("../images/mouse-hover.png"), default;
+    text-decoration: none;
+  }
+
+body{
+    background-image:url('../images/background1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:15%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.email-close{
+    position:absolute;
+    background-color: rgb(205, 226, 253);
+    right:0;
+    height:28px;
+    width:28px;
+    z-index: 3;
+    border-radius:50%;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.email-container{
+    position:absolute;
+    margin-left:30%;
+    margin-top:10%;
+    width:40%;
+    height:50%;
+    background-color: rgb(168, 185, 209);
+    z-index:2;
+    padding:20px;
+    border-radius: 30px;
+}
+
+.email-header{
+    background-image: url('../images/email.png');
+    background-repeat: no-repeat;
+    background-size: 3%;
+    margin-left: 2%;
+    position:relative;
+    width:95.5%;
+    height:5%;
+    background-color: rgb(168, 185, 209);
+}
+
+.email-sidebar{
+    position: relative;
+    display: inline-block;
+    margin-left:2%;
+    width:20%;
+    height:95%;
+    background-color: rgb(189, 210, 236);
+    border-radius: 20px;
+    padding:15px;
+}
+
+.email-sidebar-content{
+    position:absolute;
+    border-radius: 10px;
+    width:88%;
+    height:4%;
+    background-color: white;
+}
+
+.email-sidebar-text{
+    
+    font-family: 'Courier New', Courier, monospace;
+    margin-left:10%;
+    margin-top:3%;
+}
+    
+.email-main{
+    position: relative;
+    display: inline-block;
+    margin-left:5px;
+    width:75%;
+    height:95%;
+    background-color: rgb(205, 226, 253);
+    border-radius: 20px;
+}
+
+.email-main-content{
+    position: absolute;
+    padding:20px;
+   
+    margin-left: 20px;;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    
+}
+
+.no-emails{
+    background-image: url('../images/sleeping-panda.gif');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    position:absolute;
+    background-color: white;
+    width:90%;
+    height:80%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    
+    padding:10px;
+    border-radius: 20px;
+}
+
+.footer{
+    position:fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(146, 146, 146);
+}
+
+#ct7{
+    right:20px;
+    width:20px;
+    transform: translate(-50%);
+    padding-top:5px;
+    font-weight: bold;
+    color:rgb(217, 217, 217);
+    font-size:20px;
+}
+
+.home{
+    position: relative;
+    display: inline-block;
+    margin-left:25px;
+    margin-top:10px;
+}
+
+.home:hover .home-content {display: block;}
+
+.homebtn{
+    background-image: url('../images/home.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top:5px;
+    padding: 25px;
+    border: none;
+}
+
+.home-content{
+display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,2, 2);
+  z-index: 1;
+  bottom:100%;
+}
+.home-content a{
+color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.home-content a:hover {background-color: #ddd;}
+
+.folder{
+    position: fixed;
+    margin-left: 3%;
+    bottom:19px;
+    width:50px;
+}
+
+.email{
+    position:fixed;
+    margin-left:16%;
+    bottom:16px;
+    width:50px;
+}
+
+.browser{
+    position:fixed;
+    margin-left: 11%;
+    bottom: 11px;
+    background-size: 20px;
+}
+
+.time-container{
+    position:absolute;
+    display: inline-block;
+    margin-left:90%;
+    margin-top:20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right:30px;
+}
+
+.image-hover{
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+}
+
+.image-hover:hover{
+opacity:1;
+}
+
+.pdf{
+    position:absolute;
+    width:115px;
+    height:145px;
+    
+    margin-left: 48px;
+    margin-top:625px;
+}
+
+.music-file{
+    height:110px;
+    width:110px;
+   
+    position:absolute;
+    text-align:center;
+    padding-bottom: 15px;
+    margin-left:240px;
+    margin-top:640px;
+}
+
+.camera{
+    height:140px;
+    width:112px;
+    
+    position:absolute;
+    text-align:center;
+    padding-bottom:15px;
+    margin-left:50px;
+    margin-top:440px;
+}
+.read-me{
+    height:140px;
+    
+    position:absolute;
+    
+    margin-left:35px;
+    margin-top:240px;
+}
+
+.folder-desktop{
+    height:120px;
+    width:120px;
+
+    position: absolute;
+
+    margin-left: 40px;
+    margin-top: 40px;
+
+    z-index: 3;
+}
+
+.art{
+    position:absolute;
+    height:120px;
+    margin-left:240px;
+    margin-top:445px;
+}
+
+
+  
