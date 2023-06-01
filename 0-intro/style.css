@@ -11,27 +11,25 @@ a{
     cursor: url("../images/mouse-hover.png"), default;
   }
 
-p{
-    text-decoration:25;
-    font-size: 25px;
-}
-
 .login{
     position: absolute;
 
     width:200px;
-    height:75px;
+    height:70px;
     background-color: rgb(235, 222, 204);
     
     margin-left:50%;
     transform: translate(-50%);
-    margin-top:91%;
+    top:85%;
 
-    
+    font-size: 35px;
 
     text-align:center;
+    padding-bottom: 20px;
     font-family: 'Courier New', Courier, monospace;
     color:black;
+
+    border-radius: 20px;
 }
 
 .login:hover{
@@ -41,7 +39,7 @@ p{
 
 .login-container{
     background-color: rgb(208, 195, 179);
-    width:700px;
+    width:30%;
     height:750px;
     margin-left:50%;
     margin-top:12%;
@@ -63,6 +61,6 @@ p{
     padding-right:30px;
 
     text-align:center;
-    font-size: 26px;
+    font-size: 32px;
     font-family: 'Courier New', Courier, monospace;
 }
