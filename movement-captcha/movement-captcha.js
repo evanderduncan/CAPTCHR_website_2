@@ -28,7 +28,6 @@ function setup() {
 
   video.hide();
 
-  
   blueCircle = createVector(random(width), random(height));
    blueCircleAttached = false;
   //same with red circle - reciever
@@ -84,6 +83,28 @@ function draw() {
         return;
       }
     }
+
+    
+    if (leftWrist) {
+      fill(255, 255, 255);
+      noStroke();
+      ellipse(leftWrist.x, leftWrist.y, 10, 10);
+
+      if (dist(leftWrist.x, leftWrist.y, blueCircle.x, blueCircle.y) < blueCircleSize/2) {
+        blueCircleAttached = true;
+      }
+      
+      if (dist(blueCircle.x, blueCircle.y, redCircle.x, redCircle.y) < blueCircleSize/2 + 25) {
+        setup();
+        counter++;
+        if (counter >= 5) {
+          let nextPageBtn = document.getElementById("next-page-btn");
+          nextPageBtn.classList.remove("hidden");
+        }
+        return;
+      }
+    }
+
 
     // draw the blue circle
     fill(30,144,255);
